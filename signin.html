@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Code Critters</title>
+    <!-- EXACT same head section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    
+    <div id="pet-container"></div>
+
+    <div class="main-container">
+        <header>
+            <h1>Welcome Back!</h1>
+            <p>Sign in to tend to your garden</p>
+            
+            <nav class="main-nav">
+                <a href="/index.html">Garden</a>
+                <a href="/about.html">About Us</a>
+                <a href="/signin.html">Sign In</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- This form is a visual prototype. It doesn't actually log anyone in. -->
+            <form class="signin-form card" action="/index.html">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="form-button">Enter the Garden</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="/public/js/pets.js"></script>
+     <!-- ===== ADD THIS NEW SCRIPT ===== -->
+    <script>
+        // 1. Find the form on the page using its new ID
+        const loginForm = document.getElementById('login-form');
+
+        // 2. Listen for when the user tries to "submit" the form (by clicking the button)
+        loginForm.addEventListener('submit', function(event) {
+            
+            // 3. Stop the form's default behavior (which is to reload the page)
+            event.preventDefault();
+
+            // 4. In a real app, you would check the password here.
+            // For now, we'll just show an alert and redirect.
+            alert("Signing in... Welcome to the Garden!");
+
+            // 5. Manually redirect the user to the garden page
+            window.location.href = '/index.html';
+        });
+    </script>
+    <!-- ============================= -->
+
+</body>
+</html>

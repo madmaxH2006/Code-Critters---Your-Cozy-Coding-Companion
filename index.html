@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Critters - Your Cozy Coding Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+
+    <div id="pet-container"></div>
+    <div id="background-particles"></div>
+
+    <div class="main-container">
+        <header>
+            <h1 class="interactive-title">
+                <span>C</span><span>o</span><span>d</span><span>e</span>
+                <span> </span>
+                <span>C</span><span>r</span><span>i</span><span>t</span><span>t</span><span>e</span><span>r</span><span>s</span>
+            </h1>
+            <p>Your daily dose of cute coding tricks!</p>
+            <nav class="main-nav">
+                <a href="/index.html">Garden</a>
+                <a href="/about.html">About Us</a>
+                <a href="/signin.html">Sign In</a>
+            </nav>
+        </header>
+
+        <section id="user-garden" class="garden-section">
+            <div class="avatar-container">
+                <img src="https://i.pravatar.cc/100?u=user123" alt="User Avatar" id="user-avatar">
+                <h2 id="user-name">CoderJane</h2>
+            </div>
+            <div class="garden-stats">
+                <h3>My Garden</h3>
+                <div class="user-stats-grid">
+                    <span id="user-level">Lvl. 1</span>
+                    <div class="xp-bar">
+                        <div id="xp-bar-fill"></div>
+                        <div id="xp-sparkle">✨</div>
+                    </div>
+                    <span id="sparkle-points">✨ 0</span>
+                </div>
+                <div id="flower-bed"></div>
+                <p>Pets Unlocked: <span id="pet-count">1</span></p>
+                <a href="/post.html" class="post-button">Post a New Trick!</a>
+            </div>
+        </section>
+
+        <!-- Sections are in a vertical stack -->
+        <section class="quest-section card">
+            <h3>Daily Quests</h3>
+            <div id="quest-board"></div>
+        </section>
+
+        <section class="partner-section card">
+            <h3>Find a Coding Buddy! 🤝</h3>
+            <div id="user-list"></div>
+        </section>
+
+        <main id="trick-feed">
+            <!-- Trick feed is loaded here by JS -->
+        </main>
+
+    </div> <!-- End of .main-container -->
+
+    <!-- Modals -->
+    <div id="pairing-modal" class="hidden">
+        <div class="pairing-box">
+            <div class="magic-circle"></div>
+            <p id="pairing-text">Pairing up with a buddy...</p>
+            <div id="avatar-pair">
+                <img src="https://i.pravatar.cc/100?u=user123" alt="Your Avatar" class="your-avatar">
+                <span class="vs-text">vs</span>
+                <img src="" alt="Partner Avatar" class="partner-avatar">
+            </div>
+        </div>
+    </div>
+    <div id="reward-overlay" class="hidden">
+        <div id="confetti-container"></div>
+        <img src="/public/images/dancing-cat.gif" alt="A dancing cat!" id="reward-cat">
+    </div>
+
+    <!-- Scripts -->
+    <script src="public/js/pets.js"></script>
+    <!-- ===== THIS IS THE CORRECTED LINE ===== -->
+    <script src="public/js/main.js"></script>
+    <!-- ===================================== -->
+</body>
+</html>

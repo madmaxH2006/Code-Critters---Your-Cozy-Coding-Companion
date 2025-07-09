@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Code Critters</title>
+    <!-- The head section links to the same files as before -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    
+    <!-- This new container will hold the floating particles -->
+    <div id="background-particles"></div>
+
+    <!-- This is for the running animals -->
+    <div id="pet-container"></div>
+
+    <div class="main-container">
+        <header>
+            <!-- This h1 tag is now structured to animate each letter -->
+            <h1 class="interactive-title">
+                <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+                <span> </span>
+                <span>U</span><span>s</span>
+            </h1>
+            <p>The story behind Code Critters</p>
+            <nav class="main-nav">
+                <a href="/index.html">Garden</a>
+                <a href="/about.html">About Us</a>
+                <a href="/signin.html">Sign In</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- The 'scroll-reveal' class is still here for the fade-in effect -->
+            <div class="card scroll-reveal">
+                <h3>Our Mission 🐾</h3>
+                <p>We believe learning to code shouldn't be scary or boring. It should be a magical adventure! Code Critters was created to be a cozy corner of the internet where you can learn, create, and grow.</p>
+            </div>
+
+            <!-- The creator spotlight box -->
+            <div class="card scroll-reveal creator-spotlight">
+                <img src="/public/images/peeking-fox.gif" alt="A cute peeking fox" class="peeking-animal">
+                <h3>A Word From The Creator</h3>
+                <!-- This p tag now has an ID for the typewriter effect -->
+                <p id="creator-text">This little world was built with love, pixels, and a lot of coffee. The goal is to make every line of code feel like a small victory. Follow my journey for more updates! ❤️</p>
+                <a href="https://www.instagram.com/sus.h._/" target="_blank" class="insta-button">
+                    Follow her! (sus.h._)
+                </a>
+            </div>
+
+            <div class="card scroll-reveal">
+                <h3>How It Works 🌸</h3>
+                <p>Every day, you'll find new bite-sized quests. Completing them helps you unlock new pixel pets, cute outfits for your avatar, and beautiful flowers for your garden. Share your own coding shortcuts with the community and watch our world grow together!</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- The scripts remain the same, loading pets.js and the heavily updated about.js -->
+    <script src="public/js/pets.js"></script>
+    <script src="public/js/about.js"></script>
+</body>
+</html>
